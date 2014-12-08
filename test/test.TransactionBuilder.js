@@ -111,7 +111,7 @@ describe('TransactionBuilder', function() {
   });
 
 
-  it('headAddress put utxo of given address first selected', function() {
+  xit('headAddress put utxo of given address first selected', function() {
     var b = new TransactionBuilder({spendUnconfirmed: true, headAddress: 'mhNCT9TwZAGF1tLPpZdqfkTmtBkY282YDW'})
       .setUnspent(testdata.dataUnspent2)
       ._selectUnspent(1.01 * util.COIN);
